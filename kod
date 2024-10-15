@@ -1,0 +1,27 @@
+actor Hesapmakinesi {
+    
+    // Toplama 
+    public func toplama(a: Int, b: Int): async Int {
+        return a + b;
+    };
+    
+    // Çıkarma 
+    public func cikarma(a: Int, b: Int): async Int {
+        return a - b;
+    };
+    
+    // Çarpma 
+    public func carpma(a: Int, b: Int): async Int {
+        return a * b;
+    };
+    
+    // Bölme 
+    public func bolme(a: Int, s: Int): async ?Int {
+        if (s == 0) {
+            // Hata durumu: 0'a bölme
+            return null;
+        } else {
+            return ?(a / s);
+        };
+    };
+};
